@@ -1,0 +1,15 @@
+* {
+	box-sizing: border-box;
+}
+
+body {
+	background-color: #eee;
+	color: #000;
+	transition: 0.30s;
+}
+
+.dark-theme {
+	transition: 0.30s;
+	background-color: rgb(46, 45, 45);
+	color: rgb(228, 223, 223);
+}

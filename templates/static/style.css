@@ -6,10 +6,50 @@ body {
 	background-color: #eee;
 	color: #000;
 	transition: 0.30s;
+	margin: 0;
 }
 
 .dark-theme {
 	transition: 0.30s;
 	background-color: rgb(46, 45, 45);
 	color: rgb(228, 223, 223);
+}
+
+.topnav {
+	background-color: rgb(49, 112, 131);
+	width: 100%;
+	margin: 0;
+	height: 50px;
+	overflow: hidden;
+	box-shadow: 0px 4px 8px 0px rgba(89, 42, 94, 0.897);
+}
+
+.topnav a {
+	background-color: inherit;
+	font-family: Arial, Helvetica, sans-serif;
+	color: rgb(20, 34, 43);
+	padding: 13px;
+	float: left;
+	margin: 0;
+	transition: 0.30s;
+	height: inherit;
+	text-align: center;
+}
+
+.topnav a:hover {
+	background-color: rgb(40, 86, 100);
+	color: #000;
+}
+
+#btn-1 {
+	background-color: rgb(5, 60, 133);
+	padding: 7px;
+	color: #fff;
+	transition: 0.30s;
+	cursor: pointer;
+	width: 120px;
+	margin: 1px;
+	text-align: center;
+	border: 2px double rgb(4, 54, 70);
+	border-radius: 5px;
 }

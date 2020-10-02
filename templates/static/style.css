@@ -250,15 +250,15 @@ h5 {
 	margin: 0;
 	width: 100%;
 	position: relative;
-	background-color: rgb(151, 151, 151);
-	border-top: 2px solid rgb(70, 70, 70);
+	background-color: rgb(173, 173, 173);
+	border-top: 1px solid rgb(70, 70, 70);
 	bottom: 0;
-	height: 200px;
+	height: 100px;
 }
 
 .footer a {
 	color: rgb(23, 14, 141);
-	background-color: rgb(151, 151, 151);
+	background-color: inherit;
 	margin: 2px;
 	transition: 0.20s;
 }
@@ -269,5 +269,5 @@ h5 {
 }
 
 .footer h4 {
-	background-color: rgb(151, 151, 151);
+	background-color: inherit;
 }

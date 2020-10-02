@@ -31,7 +31,7 @@ body {
 	color: rgb(20, 34, 43);
 	float: left;
 	padding: 13px;
-	margin: 0;
+	margin-left: 3px;
 	transition: 0.30s;
 	height: inherit;
 	text-align: center;
@@ -244,4 +244,30 @@ a:hover {
 h5 {
 	position: relative;
 	bottom: 0;
+}
+
+.footer {
+	margin: 0;
+	width: 100%;
+	position: relative;
+	background-color: rgb(151, 151, 151);
+	border-top: 2px solid rgb(70, 70, 70);
+	bottom: 0;
+	height: 200px;
+}
+
+.footer a {
+	color: rgb(23, 14, 141);
+	background-color: rgb(151, 151, 151);
+	margin: 2px;
+	transition: 0.20s;
+}
+
+.footer a:hover {
+	text-decoration: underline;
+	transition: 0.20s;
+}
+
+.footer h4 {
+	background-color: rgb(151, 151, 151);
 }

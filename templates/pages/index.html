@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html>
+<html color-mode="light">
 	<head>
 		<meta charset="utf-8">
 		<meta name="viewport" content="width=device-width">
@@ -15,10 +15,33 @@
 				<i class="fa fa-bars"></i>
 			</a>
 		</div>
+		<button 
+			id="btn-2"
+			class="color-mode__btn light--hidden" 
+			aria-label="Toggle light mode">
+			Toggle Light Mode 
+			<svg aria-hidden="true">
+				<title> huh</title>
+				<use href="#sun"></use>
+			</svg>
+		</button>
+
+		<button
+			id="btn-2"
+			class="color-mode__btn dark--hidden"
+			aria-label="Toggle dark mode">
+			toggle dark mode 
+			<svg aria-hidden="true">
+				<title>Dark</title>
+				<use href="#moon"></use>
+			</svg>
+		</button>
 		<center>
 			<h1 id="header-3">Welcome!</h1>
 			<br><br>
-			<h4>You can learn more about us in the <a href="/pages/about.html">About</a> page! </h4>
+			<img src="/media/placeholder.png">
+			<h4>You can learn more about us in the <a href="/pages/about.html">About</a> page!</h4>
+			<h5>Have a problem? Feel free to <a href="/pages/contact.html">Contact Us</a>
 		</center>
 		<!--<div class="button" id="btn-1" onclick="toggle()">Change Theme</div>-->
 		<script src="/static/script.js"></script>

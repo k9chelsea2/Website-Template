@@ -5,6 +5,7 @@
 
 body {
 	background-color: #eee;
+	background-color: var(--bg-color, #eee);
 	color: #000;
 	transition: 0.30s;
 	margin: 0;
@@ -159,7 +160,7 @@ label {
 }
 
 #name, #email, #message {
-	margin: 3px;
+	margin: 8px;
 }
 
 #name, #email {
@@ -199,3 +200,35 @@ label {
   --bg-color: rgb(46, 45, 45);
 }
 
+a {
+	color: rgb(129, 63, 146);
+	text-decoration: none;
+}
+
+a:hover {
+	text-decoration: underline;
+}
+
+:root[color-mode="light"] {
+	--bg-color: #eee;
+	--text-color: rgb(0, 1, 12);
+}
+
+:root[color-mode="dark-mode"] {
+	--bg-color: rgb(46, 45, 45);
+	--text-color: #ddd;
+}
+
+:root[color-mode="light"] .light--hidden {
+	display: none;
+}
+
+:root[color-mode="dark"] .dark--hidden {
+	display: none;
+}
+
+#btn-2 {
+	background: #000;
+	border: none;
+	display: none;
+}

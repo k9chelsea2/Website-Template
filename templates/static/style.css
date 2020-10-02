@@ -62,6 +62,7 @@ body {
 	text-align: center;
 	border: 2px double rgb(4, 54, 70);
 	border-radius: 5px;
+	user-select: none;
 }
 
 #btn-1:hover {
@@ -231,4 +232,16 @@ a:hover {
 	background: #000;
 	border: none;
 	display: none;
+}
+
+#img-1 {
+	border: none;
+	position: relative;
+	left: 0px;
+	float: none;
+}
+
+h5 {
+	position: relative;
+	bottom: 0;
 }

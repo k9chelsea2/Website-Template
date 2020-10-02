@@ -1,5 +1,6 @@
 * {
 	box-sizing: border-box;
+	background: var(--bg-color);
 }
 
 body {
@@ -9,10 +10,9 @@ body {
 	margin: 0;
 }
 
-.dark-theme {
-	transition: 0.30s;
-	background-color: rgb(46, 45, 45);
-	color: rgb(228, 223, 223);
+@media (prefers-color-scheme: dark) {
+	--bg-color: rgb(46, 45, 45);
+	color: #ddd;
 }
 
 .topnav {
@@ -36,6 +36,11 @@ body {
 	text-align: center;
 }
 
+#btn-1 + * {
+	--bg-color: rgb(46, 45, 45);
+	color: #ddd;
+}
+
 .topnav a:hover {
 	background-color: rgb(40, 86, 100);
 	color: #000;
@@ -56,6 +61,12 @@ body {
 	text-align: center;
 	border: 2px double rgb(4, 54, 70);
 	border-radius: 5px;
+}
+
+#btn-1:hover {
+	border: 2px solid rgba(30, 117, 133, 0.938);
+	transition: 0.30s;
+	background-color: rgb(29, 92, 175);
 }
 
 .topnav .icon {
@@ -100,6 +111,13 @@ body {
 	font-family: Georgia, 'Times New Roman', Times, serif;
 }
 
+#header-3 {
+	font-size: 40px;
+	text-shadow: 2px 1px 3px rgb(73, 73, 73);
+	text-decoration: underline;
+	font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
 #paragraph-1 {
 	font-size: 21px;
 	width: 710px;
@@ -126,7 +144,7 @@ img {
 }
 
 @media screen and (max-width: 600px) {
-	img {width: 200px;}
+	img {width: 200px; transition-delay: 2s; transition: width 2s;}
 	#header-1 {font-size: 20px;}
 	.image p {width: 200px; display: none;}
 }
@@ -167,3 +185,17 @@ label {
 @media screen and (max-width: 600px) {
 	#name, #email, #message {width: 80%;}
 }
+
+@media (prefers-color-scheme: light) {
+  .light {
+    display: none;
+  }
+}
+
+@media (prefers-color-scheme: dark) {
+  .dark {
+    display: none;
+  }
+  --bg-color: rgb(46, 45, 45);
+}
+

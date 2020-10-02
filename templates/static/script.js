@@ -11,3 +11,8 @@ function topnav_responsive() {
 		x.className = "topnav";
 	}
 }
+
+document.getElementById('themeToggle').addEventListener('change', function(event) {
+	(event.target.checked) ? document.body.setAttribute('data-theme', 'dark') :
+document.body.removeAttribute('data-theme');
+});

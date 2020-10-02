@@ -15,6 +15,23 @@
 				<i class="fa fa-bars"></i>
 			</a>
 		</div>
+		<center>
+			<br>
+			<h1 id="header-2">Contact Us</h1>
+		<form action="/contact" id="contact-form" method="post" role="form">
+				<label for="name">Name</label>
+				<input id="name" name="name" type="text" 	placeholder="Name..." required></input>
+
+				<label for="email">Email</label>
+				<input id="email" name="email" type="text" placeholder="Email Address..." required></label>
+
+				<label for="message">Message</label>
+				<textarea id="message" name="message" placeholder="Message" rows="3" required></textarea>
+
+				<br>
+				<button id="btn-1" onclick="document.location = 'index.html'" type="submit">Submit</button>
+		</form>
+		</center>
 		<script src="/static/script.js"></script>
 	</body>
 </html>

@@ -163,6 +163,7 @@ label {
 
 #name, #email, #message {
 	margin: 8px;
+	box-shadow: 0px 2px 6px 0px rgb(126, 126, 126);
 }
 
 #name, #email {
@@ -179,10 +180,17 @@ label {
 	font-size: 11px;
 }
 
+#name, #email:focus {
+	
+}
+
 #message {
+	border: 1px solid rgb(138, 138, 138);
 	padding: 3px;
 	width: 580px;
 	height: 100px;
+	border-radius: 4px;
+	box-shadow: 0px 2px 6px 0px rgb(126, 126, 126);
 }
 
 @media screen and (max-width: 600px) {
@@ -271,4 +279,8 @@ h5 {
 
 .footer h4 {
 	background-color: inherit;
+}
+
+@media screen and (max-width: 1000px) {
+	.footer {position: fixed;}
 }

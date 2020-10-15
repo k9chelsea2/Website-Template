@@ -1,20 +1,24 @@
 <!DOCTYPE html>
-<html color-mode="light">
+<html color-mode="light" lang="en">
 	<head>
 		<meta charset="utf-8">
 		<meta name="viewport" content="width=device-width">
 		<title>Website Template | Home</title>
 		<link rel="stylesheet" href="/static/style.css" type="text/css">
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 	</head>
 	<body>
+		<!--code for top navigation bar-->
 		<div class="topnav" id="navbar">
 			<a href="/pages/index.html" class="active">Home</a>
 			<a href="/pages/about.html">About</a>
 			<a href="/pages/contact.html">Contact us</a>
+			<!--adding responsivness to the topnav-->
 			<a href="javascript:void(0);" class="icon" onclick="topnav_responsive()">
 				<i class="fa fa-bars"></i>
 			</a>
 		</div>
+		<!--Not in use yet-->
 		<button 
 			id="btn-2"
 			class="color-mode__btn light--hidden" 
@@ -37,23 +41,25 @@
 			</svg>
 		</button>
 		<center>
-			<h1 id="header-3">Welcome!</h1>
+			<!--content for Home page-->
+			<h1 id="header-3" title="Welcome Page">Welcome!</h1>
 			<br><br>
-			<h4>Hope you enjoy your time here! There absolutly nothing to do at all but in your version you can add your main content here  </h4>
+			<h4 title="Welcome Page">Hope you enjoy your time here! There absolutly nothing to do at all but in your version you can add your main content here  </h4>
 			<h4>You can learn more about us in the <a href="/pages/about.html">About</a> page!</h4>
-			<img src="/media/placeholder.png" id="img-1">
+			<img src="/media/placeholder.png" id="img-1" alt="placeholder" title="placeholder image">
 			<h4>Possible things you could do are write a blog, make a personal website about yourself bascially anything, please feel free to suggest stuff to add to the template</h4>
 			<br><br><br>
 			<h5>Have a problem? Feel free to <a href="/pages/contact.html">Contact Us</a>
 			<br><br><br>
 		</center>
 		<br><br><br>
+		<!--code for footer-->
 		<div class="footer">
 			<h4>Link to your socials</h4>
 			<a href="https://github.com/k9chelsea2/Website-Template">Github</a>
 			<a href="https://repl.it/languages">Repl.it</a>
 			<style>
-				.footer {position: absolute;}
+				.footer {position: absolute; @media screen and (max-width: 1000px) {position: relative;}}
 			</style>
 		</div>
 		<!--<div class="button" id="btn-1" onclick="toggle()">Change Theme</div>-->

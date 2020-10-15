@@ -1,3 +1,5 @@
+//toggle responsive class
+
 function topnav_responsive() {
 	var x = document.getElementById("navbar");
 	if (x.className === "topnav") {
@@ -7,6 +9,7 @@ function topnav_responsive() {
 	}
 };
 
+//not implemented
 const toggleColorMode = e => {
 	if (e.currentTarget.classList.contains("light--hidden")) {
 		document.documentElement.setAttribute("color-mode", "light");

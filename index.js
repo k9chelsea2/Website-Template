@@ -1,3 +1,4 @@
+//Installing packages
 const express = require('express');
 const app = express();
 const nodemailer = require('nodemailer');
@@ -5,10 +6,13 @@ const bodyParser = require('body-parser');
 app.use(bodyParser.urlencoded({extended: true}));
 app.use(express.static("templates"));
 
+//Send the index.html file to display
 app.get('/', (req, res) => {
   res.sendFile(__dirname + '/templates/pages/index.html');
 });
 
+
+//nodemailer code
 app.post('/contact', (req, res) => {
 	const smptTrans = nodemailer.createTransport({
 		host: 'smpt.gmail.com',
@@ -36,6 +40,7 @@ app.post('/contact', (req, res) => {
 	})
 })
 
+//initiate server
 app.listen(3000, () => {
   console.log('Server up and running');
 });

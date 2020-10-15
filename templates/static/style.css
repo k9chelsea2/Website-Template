@@ -5,7 +5,6 @@
 
 body {
 	background-color: #eee;
-	background-color: var(--bg-color, #eee);
 	color: #000;
 	transition: 0.30s;
 	margin: 0;
@@ -16,6 +15,8 @@ body {
 	color: #ddd;
 }
 
+
+/*topnav code*/
 .topnav {
 	background-color: rgb(49, 112, 131);
 	width: 100%;
@@ -28,9 +29,9 @@ body {
 .topnav a {
 	background-color: inherit;
 	font-family: Arial, Helvetica, sans-serif;
-	color: rgb(20, 34, 43);
+	color: rgb(144, 177, 197);
 	float: left;
-	padding: 13px;
+	padding: 15px;
 	margin-left: 3px;
 	transition: 0.30s;
 	height: inherit;
@@ -45,13 +46,14 @@ body {
 
 .topnav a:hover {
 	background-color: rgb(40, 86, 100);
-	color: #000;
+	color: rgb(166, 209, 230);
 }
 
 .topnav a.active {
 	background-color: rgb(50, 93, 105);
 }
 
+/*button styling*/
 #btn-1 {
 	background-color: rgb(5, 60, 133);
 	padding: 7px;
@@ -173,15 +175,19 @@ label {
 	border: 2px ridge #fff;
 	outline: none;
 	border-radius: 5px;
+	transition: 0.50s;
+}
+
+#name:hover, #email:hover {
+	transform: scale(1.03);
+	text-align: left;
+	transition: 0.50s;
+	padding: 0;
 }
 
 #name, #email::placeholder {
 	margin: 1px;
 	font-size: 11px;
-}
-
-#name, #email:focus {
-	
 }
 
 #message {
@@ -195,6 +201,7 @@ label {
 
 @media screen and (max-width: 600px) {
 	#name, #email, #message {width: 80%;}
+	#name:hover, #email:hover {width: 80%;}
 }
 
 @media (prefers-color-scheme: light) {
